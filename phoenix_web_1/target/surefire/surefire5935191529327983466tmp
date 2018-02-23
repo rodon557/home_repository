@@ -1,0 +1,6 @@
+#surefire
+#Wed Jan 24 23:11:23 CST 2018
+org.uncommons.reportng.escape-output=false
+user.dir=E\:\\Java_workspace\\workspace001\\phoenix_web_1
+localRepository=E\:\\repository
+basedir=E\:\\Java_workspace\\workspace001\\phoenix_web_1

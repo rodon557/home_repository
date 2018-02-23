@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="phoenix_web_1">
+    <test name="注册">
+       <!-- <groups>
+          <run>
+              <include name="g1"></include>
+          </run>
+       </groups> -->
+       <classes>
+          <class name="com.lemon.phoenix.RegisterPage"></class> 
+       </classes>
+    </test>
+    <parameter name="browserType" value="firefox"></parameter>
+    <parameter name="driverPath" value="src\\test\\resources\\geckodriver.exe"></parameter>
+    <parameter name="seleniumVersion" value="2.x"></parameter>
+    <listeners>
+		<listener class-name="com.lemon.phoenix.listener.TestListener"></listener>
+		<listener class-name="org.uncommons.reportng.HTMLReporter"></listener>
+    </listeners>
+</suite>
