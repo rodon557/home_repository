@@ -62,8 +62,9 @@ public class Base {
 		List<File> files = new ArrayList<File>();
 		files.add(logFile);
 		files.add(testCase);
-		EmailUtil.sendmessage("13517315120@163.com", "nick1234", "smtp.163.com", "25", "m13517315120@163.com","546492510@qq.com", "测试报告", "http://localhost/html/index.html", files);
-		//EmailUtil.sendmessage("546492510@qq.com", "gizqzkjebqkmbfai", "smtp.qq.com", "465", "546492510@qq.com","luodongxingkong@163.com", "测试报告", "http://localhost/html/index.html", files);
+		//EmailUtil.sendmessage("WU122795@163.com", "690328wf", "smtp.163.com", "25", "WU122795@163.com","546492510@qq.com", "测试报告", "http://localhost/html/index.html", files);
+	    //EmailUtil.sendmessage("13517315120@163.com", "nick1234", "smtp.163.com", "25", "m13517315120@163.com","546492510@qq.com", "测试报告", "http://localhost/html/index.html", files);
+		EmailUtil.sendmessage("546492510@qq.com", "gizqzkjebqkmbfai", "smtp.qq.com", "465", "546492510@qq.com","luodongxingkong@163.com", "测试报告", "http://localhost/html/index.html", files);
 		logger.info("********************************发送邮件成功***************************");
     }
     /**查找元素调用显示等待

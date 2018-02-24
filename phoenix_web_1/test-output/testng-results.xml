@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="7" failed="0" total="7" passed="0">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="472" started-at="2018-02-24T07:28:56Z" finished-at="2018-02-24T07:28:57Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="472" started-at="2018-02-24T07:28:56Z" finished-at="2018-02-24T07:28:57Z">
+      <class name="com.lemon.phoenix.Base">
+        <test-method status="FAIL" signature="setUp(java.lang.String, java.lang.String)[pri:0, instance:com.lemon.phoenix.Base@464bee09]" name="setUp" is-config="true" duration-ms="0" started-at="2018-02-24T15:28:56Z" finished-at="2018-02-24T15:28:56Z">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'browserType' is required by @Configuration on method setUp but has not been marked @Optional or defined
+in C:\Users\bonree\AppData\Local\Temp\testng-eclipse-1729727597\testng-customsuite.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'browserType' is required by @Configuration on method setUp but has not been marked @Optional or defined
+in C:\Users\bonree\AppData\Local\Temp\testng-eclipse-1729727597\testng-customsuite.xml
+	at org.testng.internal.Parameters.createParameters(Parameters.java:155)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:358)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:86)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:199)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:254)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="SKIP" signature="tearDown()[pri:0, instance:com.lemon.phoenix.Base@464bee09]" name="tearDown" is-config="true" duration-ms="0" started-at="2018-02-24T15:28:57Z" finished-at="2018-02-24T15:28:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.lemon.phoenix.Base -->
+      <class name="com.lemon.phoenix.RegisterPage">
+        <test-method status="SKIP" signature="testSuccessdatas()[pri:0, instance:com.lemon.phoenix.RegisterPage@57fffcd7]" name="testSuccessdatas" duration-ms="3" started-at="2018-02-24T15:28:56Z" finished-at="2018-02-24T15:28:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSuccessdatas -->
+        <test-method status="SKIP" signature="testfaildatas(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.lemon.phoenix.RegisterPage@57fffcd7]" name="testfaildatas" duration-ms="2" started-at="2018-02-24T15:28:57Z" data-provider="failDatas" finished-at="2018-02-24T15:28:57Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[用户名不能为空]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testfaildatas -->
+        <test-method status="SKIP" signature="testfaildatas(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.lemon.phoenix.RegisterPage@57fffcd7]" name="testfaildatas" duration-ms="0" started-at="2018-02-24T15:28:57Z" data-provider="failDatas" finished-at="2018-02-24T15:28:57Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[qq]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[非法的手机号]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testfaildatas -->
+        <test-method status="SKIP" signature="testfaildatas(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.lemon.phoenix.RegisterPage@57fffcd7]" name="testfaildatas" duration-ms="0" started-at="2018-02-24T15:28:57Z" data-provider="failDatas" finished-at="2018-02-24T15:28:57Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[18813984521]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[密码不能为空]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testfaildatas -->
+        <test-method status="SKIP" signature="testfaildatas(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.lemon.phoenix.RegisterPage@57fffcd7]" name="testfaildatas" duration-ms="1" started-at="2018-02-24T15:28:57Z" data-provider="failDatas" finished-at="2018-02-24T15:28:57Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[18813984521]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[123456]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[重复密码不能为空]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testfaildatas -->
+        <test-method status="SKIP" signature="testfaildatas(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.lemon.phoenix.RegisterPage@57fffcd7]" name="testfaildatas" duration-ms="0" started-at="2018-02-24T15:28:57Z" data-provider="failDatas" finished-at="2018-02-24T15:28:57Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[18813984521]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[12345]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[密码长度至少6位]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testfaildatas -->
+        <test-method status="SKIP" signature="testfaildatas(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.lemon.phoenix.RegisterPage@57fffcd7]" name="testfaildatas" duration-ms="1" started-at="2018-02-24T15:28:57Z" data-provider="failDatas" finished-at="2018-02-24T15:28:57Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[18813984523]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[123456]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[123456]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[密码不一致]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testfaildatas -->
+      </class> <!-- com.lemon.phoenix.RegisterPage -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

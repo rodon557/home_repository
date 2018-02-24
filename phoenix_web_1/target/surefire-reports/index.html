@@ -23,7 +23,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -37,7 +37,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-phoenix_web_1">
-              <span class="suite-name border-passed">phoenix_web_1</span>
+              <span class="suite-name border-failed">phoenix_web_1</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -48,7 +48,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-phoenix_web_1">
-                    <span>E:\Java_workspace\workspace001\phoenix_web_1\testng.xml</span>
+                    <span>E:\bonree\test\home_repository\phoenix_web_1\testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -90,21 +90,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">1 method, 1 failed,   </span>
                   </li>
                   <li>
-                    <span class="method-list-title passed">Passed methods</span>
-                    <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-phoenix_web_1" class="hide-methods passed suite-phoenix_web_1"> (hide)</a> <!-- hide-methods passed suite-phoenix_web_1 -->
-                      <a href="#" panel-name="suite-phoenix_web_1" class="show-methods passed suite-phoenix_web_1"> (show)</a> <!-- show-methods passed suite-phoenix_web_1 -->
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-phoenix_web_1" class="hide-methods failed suite-phoenix_web_1"> (hide)</a> <!-- hide-methods failed suite-phoenix_web_1 -->
+                      <a href="#" panel-name="suite-phoenix_web_1" class="show-methods failed suite-phoenix_web_1"> (show)</a> <!-- show-methods failed suite-phoenix_web_1 -->
                     </span>
-                    <div class="method-list-content passed suite-phoenix_web_1">
+                    <div class="method-list-content failed suite-phoenix_web_1">
                       <span>
-                        <img width="3%" src="passed.png"/>
+                        <img width="3%" src="failed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-phoenix_web_1" title="com.lemon.phoenix.RegisterPage" hash-for-method="testSuccessdatas">testSuccessdatas</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content passed suite-phoenix_web_1 -->
+                    </div> <!-- method-list-content failed suite-phoenix_web_1 -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -116,9 +116,9 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-phoenix_web_1" class="panel phoenix_web_1">
-          <div class="suite-phoenix_web_1-class-passed">
+          <div class="suite-phoenix_web_1-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
+              <img src="failed.png"/>
               <span class="class-name">com.lemon.phoenix.RegisterPage</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -127,14 +127,33 @@
                   <a name="testSuccessdatas">
                   </a> <!-- testSuccessdatas -->
                   <span class="method-name">testSuccessdatas</span>
+                  <div class="stack-trace">org.openqa.selenium.WebDriverException: Reached error page: about:neterror?e=connectionFailure&amp;u=http%3A//39.108.136.60%3A8380/lmcanon_web_auto/mng/register.html&amp;c=UTF-8&amp;f=regular&amp;d=Firefox%20%E6%97%A0%E6%B3%95%E5%BB%BA%E7%AB%8B%E5%88%B0%2039.108.136.60%3A8380%20%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%9A%84%E8%BF%9E%E6%8E%A5%E3%80%82
+Build info: version: &apos;3.5.1&apos;, revision: &apos;9c21bb67ef&apos;, time: &apos;2017-08-17T15:26:08.955Z&apos;
+System info: host: &apos;BONREE-PC&apos;, ip: &apos;5.5.12.3&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_121&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{moz:profile=C:\Users\bonree\AppData\Local\Temp\rust_mozprofile.53TDuqnno42g, rotatable=false, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, pageLoadStrategy=normal, moz:headless=false, platform=ANY, specificationLevel=0.0, moz:accessibilityChecks=false, acceptInsecureCerts=false, browserVersion=56.0.1, platformVersion=6.1, moz:processID=17200.0, browserName=firefox, javascriptEnabled=true, platformName=windows_nt}]
+Session ID: b56d70c0-73a0-45d2-9535-84aa9f597b6c
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:641)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteNavigation.to(RemoteWebDriver.java:949)
+	at com.lemon.phoenix.Base.to(Base.java:209)
+	at com.lemon.phoenix.RegisterPage.testSuccessdatas(RegisterPage.java:35)
+	at com.sun.proxy.$Proxy0.invoke(Unknown Source)
+... Removed 36 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-phoenix_web_1-class-passed -->
+          </div> <!-- suite-phoenix_web_1-class-failed -->
         </div> <!-- panel phoenix_web_1 -->
         <div panel-name="test-xml-phoenix_web_1" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">E:\Java_workspace\workspace001\phoenix_web_1\testng.xml</span>
+            <span class="header-content">E:\bonree\test\home_repository\phoenix_web_1\testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -198,12 +217,12 @@ data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'testSuccessdatas')
 data.setCell(0, 2, 'com.lemon.phoenix.RegisterPage')
-data.setCell(0, 3, 45490);
+data.setCell(0, 3, 6780);
 window.suiteTableData['phoenix_web_1']= { tableData: data, tableDiv: 'times-div-phoenix_web_1'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 45 seconds</span>
+              <span class="suite-total-time">Total running time: 6 seconds</span>
               <div id="times-div-phoenix_web_1">
               </div> <!-- times-div-phoenix_web_1 -->
             </div> <!-- times-div -->
@@ -214,6 +233,12 @@ return data;
             <span class="header-content">Reporter output for phoenix_web_1</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">testSuccessdatas</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output"><img src='http://localhost/screenshot/注册/2018-02-24/1519457076194.jpg'hight='100' width='100'><a href='http://localhost/screenshot/注册/2018-02-24/1519457076194.jpg'target='_blank'>点击查看大图</a></img></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="ignored-methods-phoenix_web_1" class="panel">
@@ -242,12 +267,14 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">testSuccessdatas</span>
-                <span class="method-start">63228 ms</span>
+                <span class="method-start">29707 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-suite after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">109199 ms</span>
+                <span class="method-start">36909 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

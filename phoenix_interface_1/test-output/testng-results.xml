@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="1711" started-at="2018-02-22T10:47:55Z" finished-at="2018-02-22T10:47:57Z">
+  <suite name="Default suite" duration-ms="635" started-at="2018-02-24T08:57:10Z" finished-at="2018-02-24T08:57:11Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="1711" started-at="2018-02-22T10:47:55Z" finished-at="2018-02-22T10:47:57Z">
+    <test name="Default test" duration-ms="635" started-at="2018-02-24T08:57:10Z" finished-at="2018-02-24T08:57:11Z">
       <class name="com.lemon.phoenix.interfaces.RegisterInterface">
-        <test-method status="PASS" signature="test1()[pri:0, instance:com.lemon.phoenix.interfaces.RegisterInterface@3ecf72fd]" name="test1" duration-ms="1692" started-at="2018-02-22T18:47:55Z" finished-at="2018-02-22T18:47:57Z">
+        <test-method status="PASS" signature="test1()[pri:0, instance:com.lemon.phoenix.interfaces.RegisterInterface@3ecf72fd]" name="test1" duration-ms="622" started-at="2018-02-24T16:57:10Z" finished-at="2018-02-24T16:57:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test1 -->

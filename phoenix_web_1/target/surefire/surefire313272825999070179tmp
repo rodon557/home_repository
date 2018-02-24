@@ -1,0 +1,6 @@
+#surefire
+#Sat Feb 24 11:18:52 CST 2018
+org.uncommons.reportng.escape-output=false
+user.dir=E\:\\bonree\\test\\home_repository\\phoenix_web_1
+localRepository=F\:\\Program Files\\repository
+basedir=E\:\\bonree\\test\\home_repository\\phoenix_web_1

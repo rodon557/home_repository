@@ -48,5 +48,11 @@
          <artifactId>mail</artifactId>
          <version>1.5.0-b01</version>
      </dependency>
+     <!-- json处理  -->
+     <dependency>
+         <groupId>com.alibaba</groupId>
+         <artifactId>fastjson</artifactId>
+         <version>1.2.44</version>
+     </dependency>
   </dependencies>
 </project>
