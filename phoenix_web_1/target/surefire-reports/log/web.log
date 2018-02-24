@@ -194,3 +194,10 @@
 2018-01-28 21:20:50 method: com.lemon.phoenix.Base.tearDown(Base.java:67) - [ INFO ]----********************************发送邮件成功***************************
 2018-01-28 21:36:51 method: com.lemon.phoenix.util.EmailUtil.sendmessage(EmailUtil.java:105) - [ ERROR ]----发送邮件失败！
 2018-01-28 21:36:51 method: com.lemon.phoenix.Base.tearDown(Base.java:67) - [ INFO ]----********************************发送邮件成功***************************
+2018-02-24 11:32:03 method: com.lemon.phoenix.Base.setUp(Base.java:34) - [ INFO ]----*************************寮�濮嬫祴璇�********************************
+2018-02-24 11:32:03 method: com.lemon.phoenix.Base.setUp(Base.java:35) - [ INFO ]----鍒濆鍖栨祻瑙堝櫒椹卞姩锛屾祻瑙堝櫒绫诲瀷鏄�firefox锛岄┍鍔ㄨ矾寰勬槸:src\\test\\resources\\geckodriver.exe
+2018-02-24 11:33:01 method: com.lemon.phoenix.Base.setUp(Base.java:39) - [ INFO ]----鍒涘缓浜唂irefox椹卞姩
+2018-02-24 11:33:10 method: com.lemon.phoenix.Base.tearDown(Base.java:57) - [ INFO ]----****************************瀹屾垚濂椾欢娴嬭瘯*********************************
+2018-02-24 11:33:14 method: com.lemon.phoenix.Base.tearDown(Base.java:59) - [ INFO ]----********************************寮�濮嬪彂閫侀偖浠�***************************
+2018-02-24 11:33:16 method: com.lemon.phoenix.util.EmailUtil.sendmessage(EmailUtil.java:105) - [ ERROR ]----鍙戦�侀偖浠跺け璐ワ紒
+2018-02-24 11:33:16 method: com.lemon.phoenix.Base.tearDown(Base.java:67) - [ INFO ]----********************************鍙戦�侀偖浠舵垚鍔�***************************
