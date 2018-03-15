@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [phoenix_interface_1]">
+  <test name="registerTest(failed)">
+    <classes>
+      <class name="com.lemon.phoenix.interfaces.RegisterInterface">
+        <methods>
+          <include name="batchWriteCaseResult"/>
+          <include name="test1"/>
+        </methods>
+      </class> <!-- com.lemon.phoenix.interfaces.RegisterInterface -->
+    </classes>
+  </test> <!-- registerTest(failed) -->
+</suite> <!-- Failed suite [phoenix_interface_1] -->
