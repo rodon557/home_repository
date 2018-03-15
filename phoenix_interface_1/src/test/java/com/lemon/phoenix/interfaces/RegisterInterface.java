@@ -2,7 +2,9 @@ package com.lemon.phoenix.interfaces;
 
 import java.io.IOException;
 import java.io.UnsupportedEncodingException;
+import java.sql.SQLException;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
@@ -16,29 +18,41 @@ import org.apache.http.impl.client.CloseableHttpClient;
 import org.apache.http.impl.client.HttpClients;
 import org.apache.http.message.BasicNameValuePair;
 import org.apache.http.util.EntityUtils;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import com.alibaba.fastjson.JSONObject;
 import com.lemon.phoenix.config.RestConfig;
+import com.lemon.phoenix.pojo.DBChecker;
+import com.lemon.phoenix.util.DBCheckerUtil;
 import com.lemon.phoenix.util.ExcelUtil;
 import com.lemon.phoenix.util.HttpUtil;
 
-public class RegisterInterface {
+public class RegisterInterface extends  Base{
 	@Test(dataProvider="datas")
-   public void test1(String casId,String apiId,String requestData) throws ClientProtocolException, IOException{
+   public void test1(String caseId,String apiId,String requestData,String expected ,String sqlList) throws ClientProtocolException, IOException, ClassNotFoundException, SQLException{
 	//String url ="http://119.23.241.154:8080/futureloan/mvc/api/member/register";
-	RestConfig.getRestUrlByApiId(apiId);
+	String url =RestConfig.getRestUrlByApiId(apiId);
 	Map<String,String>map=(Map<String,String>)JSONObject.parse(requestData);
    List<NameValuePair>params=new ArrayList<NameValuePair>();
    Set<String> keys=map.keySet();
    for (String key : keys) {
 	   params.add(new BasicNameValuePair(key,map.get(key)));
   }
-   String jsonStr=HttpUtil.getResultStringByPost(url, params);
-   System.out.println(jsonStr);
+   String resultString=HttpUtil.getResultStringByPost(url, params);
+  // ExcelUtil.write(1,caseId,6,resultString,"target/test-classes/rest_info.xlsx");
+   Map<Integer,String> cellValueMap=new HashMap<Integer,String>();
+   cellValueMap.put(6, resultString);
+   //数据验证
+   String dbCheckResultString=DBCheckerUtil.validateDBDataOneColumn(sqlList);
+   if(dbCheckResultString!=null){
+	   cellValueMap.put(7, dbCheckResultString);
    }
-public Object[][] datas(){
-	return ExcelUtil.read("/rest_info.xlsx", 1,2, 7, 1,3);
+   ExcelUtil.caseResultMap.put(caseId,cellValueMap);
+   }
+	@DataProvider
+	public Object[][] datas(){
+		return ExcelUtil.read("/rest_info.xlsx", 1,2, 7, 1,5);
 	
-}
+	}
 }
