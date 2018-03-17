@@ -20,11 +20,11 @@ public class ExcelUtil {
 	 * @param startColumn 开始列
 	 * @param endColumn 结束列
 	 */
-	public static Object[][] read(String path,int startRow,int endRow,int startColumn,int endColumn){
+	public static Object[][] read(String path,int sheetNum,int startRow,int endRow,int startColumn,int endColumn){
 		Object [][] datas=new Object[endRow-startRow+1][endColumn-startColumn+1];
 		try {
 			Workbook workbook=WorkbookFactory.create(ExcelUtil.class.getResourceAsStream(path));
-			Sheet sheet=workbook.getSheetAt(0);//获取excel里的sheet1
+			Sheet sheet=workbook.getSheetAt(sheetNum-1);//获取excel里的sheet1
 			for(int i=startRow;i<=endRow;i++){
 				Row row=sheet.getRow(i-1);
 				for(int j=startColumn;j<=endColumn;j++){
@@ -43,10 +43,11 @@ public class ExcelUtil {
 		return datas;
    }
 	public static void main(String[] args) {
-		Object[][]datas=ExcelUtil.read("/register.xlsx",2,7,1,4);
+		Object[][]datas=ExcelUtil.read("/register.xlsx",1,2,7,1,4);
 		for (Object[] objects : datas) {
 			for (Object object : objects) {
-				System.out.println(object);
+				System.out.print(object);
+				System.out.print(" ");
 			}
 		}
 	}

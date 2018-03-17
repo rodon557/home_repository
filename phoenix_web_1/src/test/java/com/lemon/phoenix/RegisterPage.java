@@ -31,7 +31,7 @@ public class RegisterPage extends Base{
    }
 	@Test
 	public void testSuccessdatas() throws InterruptedException, ClassNotFoundException, SQLException{	 
-		Object[][]datas=ExcelUtil.read("/register.xlsx",8,8,1,3);
+		Object[][]datas=ExcelUtil.read("/register.xlsx",1,8,8,1,3);
 		to(PropertiesUtil.urlProperties.getProperty("register.url"));
 		String mobile =datas[0][0].toString();
 		String password =datas[0][0].toString();
@@ -62,7 +62,7 @@ public class RegisterPage extends Base{
    
 @DataProvider
    public Object[][] failDatas(){
-	   Object[][]datas=ExcelUtil.read("/register.xlsx",2,7,1,4);
+	   Object[][]datas=ExcelUtil.read("/register.xlsx",1,2,7,1,4);
 		
 	   return datas;
    }
