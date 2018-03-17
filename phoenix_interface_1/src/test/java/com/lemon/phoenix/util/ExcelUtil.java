@@ -11,6 +11,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Set;
 
+import org.apache.log4j.Logger;
 import org.apache.poi.EncryptedDocumentException;
 import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
 import org.apache.poi.ss.usermodel.Cell;
@@ -22,6 +23,7 @@ import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.ss.usermodel.WorkbookFactory;
 
 public class ExcelUtil {
+	private  static Logger logger=Logger.getLogger(ExcelUtil.class);
 	public static Map<String,Map<Integer,String>> caseResultMap=new HashMap<String,Map<Integer,String>>();
 	/**读取excel数据
 	 * @param path 文件路径
@@ -90,6 +92,7 @@ public class ExcelUtil {
 	}
 	
 	public static void batchWriteCaseResult(int sheetNum,String Path){
+		logger.info("===============回写测试数据到文件：【"+Path+"】的第【"+sheetNum+"】个表单=============");
 		InputStream is =null;
 		OutputStream os =null;
 		try {
@@ -105,12 +108,14 @@ public class ExcelUtil {
 					cell.setCellType(CellType.STRING);
 					String firstCellValue =cell.getStringCellValue();
 					if(caseId.equals(firstCellValue)){
+						logger.info("正在往第【"+(i+1)+"】行写入数据");
 					  Map<Integer,String> cellValueMap=caseResultMap.get(caseId);
 					  Set<Integer>cellNums=cellValueMap.keySet();
 					  for (Integer cellNum : cellNums) {
 						  	Cell cellToBeWrite=row.getCell(cellNum.intValue()-1,MissingCellPolicy.CREATE_NULL_AS_BLANK);
 							cellToBeWrite.setCellType(CellType.STRING);
 							cellToBeWrite.setCellValue(cellValueMap.get(cellNum));		
+							logger.info("往第【"+(i+1)+"】行第【"+(cellNum)+"】列写入的数据为【"+(cellValueMap.get(cellNum))+"】");
 					}
 					  break;
 					}
@@ -125,6 +130,7 @@ public class ExcelUtil {
 			try {
 				is.close();
 				os.close();
+				logger.info("===============回写测试数据到文件：【"+Path+"】的第【"+sheetNum+"】个表单，【完毕！】=============");
 			} catch (IOException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();

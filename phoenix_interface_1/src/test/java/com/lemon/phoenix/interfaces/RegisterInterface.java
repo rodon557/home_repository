@@ -18,6 +18,7 @@ import org.apache.http.impl.client.CloseableHttpClient;
 import org.apache.http.impl.client.HttpClients;
 import org.apache.http.message.BasicNameValuePair;
 import org.apache.http.util.EntityUtils;
+import org.apache.log4j.Logger;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
@@ -29,9 +30,10 @@ import com.lemon.phoenix.util.ExcelUtil;
 import com.lemon.phoenix.util.HttpUtil;
 
 public class RegisterInterface extends  Base{
+	private  Logger logger=Logger.getLogger(RegisterInterface.class);
 	@Test(dataProvider="datas")
    public void test1(String caseId,String apiId,String requestData,String expected ,String sqlList) throws ClientProtocolException, IOException, ClassNotFoundException, SQLException{
-	//String url ="http://119.23.241.154:8080/futureloan/mvc/api/member/register";
+	logger.info("*************当前执行测试用例：【caseId为"+caseId+"】*******************");
 	String url =RestConfig.getRestUrlByApiId(apiId);
 	Map<String,String>map=(Map<String,String>)JSONObject.parse(requestData);
    List<NameValuePair>params=new ArrayList<NameValuePair>();
@@ -49,6 +51,7 @@ public class RegisterInterface extends  Base{
 	   cellValueMap.put(7, dbCheckResultString);
    }
    ExcelUtil.caseResultMap.put(caseId,cellValueMap);
+   logger.info("*************执行测试用例：【caseId为"+caseId+"】结束*******************");
    }
 	@DataProvider
 	public Object[][] datas(){

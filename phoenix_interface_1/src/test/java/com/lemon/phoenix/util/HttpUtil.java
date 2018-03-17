@@ -15,14 +15,19 @@ import org.apache.http.impl.client.CloseableHttpClient;
 import org.apache.http.impl.client.HttpClients;
 import org.apache.http.message.BasicNameValuePair;
 import org.apache.http.util.EntityUtils;
+import org.apache.log4j.Logger;
 
 public class HttpUtil {
+	
+	private static Logger logger=Logger.getLogger(HttpUtil.class);
 	/**post请求通用处理函数
 	 * @param uri 接口地址
 	 * @param params 提交的参数
 	 * @return  响应数据
 	 */
 	public static String getResultStringByPost(String uri,List<NameValuePair>params) {
+		logger.info("请求的接口地址为:"+uri);
+		logger.info("请求的参数为:"+getparamsString(params));
 		if(StringUtils.isEmpty(uri)){
 			return "";
 		}
@@ -84,6 +89,21 @@ public class HttpUtil {
 		return resultString;
 	}
 
+	
+	public static String getparamsString(List<NameValuePair>params){
+		String paramsString="";
+		if(params!=null){
+			for (NameValuePair nameValuePair:params){
+				paramsString+=("【"+nameValuePair.getName()+"】");
+				paramsString+=":";
+				paramsString+=("【"+nameValuePair.getValue()+"】");
+			}
+		}
+		return paramsString;
+	}
+	
+	
+	
 	public static void main(String[] args) {
 		 String uri ="http://119.23.241.154:8080/futureloan/mvc/api/member/register";
 		   //决定接口提交的方式
