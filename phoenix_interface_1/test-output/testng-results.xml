@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="0" total="6" passed="6">
   <reporter-output>
   </reporter-output>
-  <suite name="phoenix_interface_1" duration-ms="2040" started-at="2018-03-16T01:30:08Z" finished-at="2018-03-16T01:30:10Z">
+  <suite name="phoenix_interface_1" duration-ms="2374" started-at="2018-03-19T12:38:53Z" finished-at="2018-03-19T12:38:56Z">
     <groups>
     </groups>
-    <test name="registerTest" duration-ms="2040" started-at="2018-03-16T01:30:08Z" finished-at="2018-03-16T01:30:10Z">
+    <test name="registerTest" duration-ms="2374" started-at="2018-03-19T12:38:53Z" finished-at="2018-03-19T12:38:56Z">
       <class name="com.lemon.phoenix.interfaces.RegisterInterface">
-        <test-method status="PASS" signature="test1(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.lemon.phoenix.interfaces.RegisterInterface@73f792cf]" name="test1" duration-ms="1001" started-at="2018-03-16T09:30:09Z" data-provider="datas" finished-at="2018-03-16T09:30:10Z">
+        <test-method status="PASS" signature="test1(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.lemon.phoenix.interfaces.RegisterInterface@73f792cf]" name="test1" duration-ms="1373" started-at="2018-03-19T20:38:54Z" data-provider="datas" finished-at="2018-03-19T20:38:55Z">
           <params>
             <param index="0">
               <value>
@@ -38,7 +38,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test1 -->
-        <test-method status="PASS" signature="test1(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.lemon.phoenix.interfaces.RegisterInterface@73f792cf]" name="test1" duration-ms="316" started-at="2018-03-16T09:30:10Z" data-provider="datas" finished-at="2018-03-16T09:30:10Z">
+        <test-method status="PASS" signature="test1(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.lemon.phoenix.interfaces.RegisterInterface@73f792cf]" name="test1" duration-ms="219" started-at="2018-03-19T20:38:55Z" data-provider="datas" finished-at="2018-03-19T20:38:56Z">
           <params>
             <param index="0">
               <value>
@@ -69,7 +69,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test1 -->
-        <test-method status="PASS" signature="test1(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.lemon.phoenix.interfaces.RegisterInterface@73f792cf]" name="test1" duration-ms="47" started-at="2018-03-16T09:30:10Z" data-provider="datas" finished-at="2018-03-16T09:30:10Z">
+        <test-method status="PASS" signature="test1(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.lemon.phoenix.interfaces.RegisterInterface@73f792cf]" name="test1" duration-ms="46" started-at="2018-03-19T20:38:56Z" data-provider="datas" finished-at="2018-03-19T20:38:56Z">
           <params>
             <param index="0">
               <value>
@@ -100,7 +100,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test1 -->
-        <test-method status="PASS" signature="test1(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.lemon.phoenix.interfaces.RegisterInterface@73f792cf]" name="test1" duration-ms="46" started-at="2018-03-16T09:30:10Z" data-provider="datas" finished-at="2018-03-16T09:30:10Z">
+        <test-method status="PASS" signature="test1(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.lemon.phoenix.interfaces.RegisterInterface@73f792cf]" name="test1" duration-ms="48" started-at="2018-03-19T20:38:56Z" data-provider="datas" finished-at="2018-03-19T20:38:56Z">
           <params>
             <param index="0">
               <value>
@@ -131,7 +131,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test1 -->
-        <test-method status="PASS" signature="test1(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.lemon.phoenix.interfaces.RegisterInterface@73f792cf]" name="test1" duration-ms="49" started-at="2018-03-16T09:30:10Z" data-provider="datas" finished-at="2018-03-16T09:30:10Z">
+        <test-method status="PASS" signature="test1(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.lemon.phoenix.interfaces.RegisterInterface@73f792cf]" name="test1" duration-ms="47" started-at="2018-03-19T20:38:56Z" data-provider="datas" finished-at="2018-03-19T20:38:56Z">
           <params>
             <param index="0">
               <value>
@@ -162,7 +162,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test1 -->
-        <test-method status="PASS" signature="test1(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.lemon.phoenix.interfaces.RegisterInterface@73f792cf]" name="test1" duration-ms="48" started-at="2018-03-16T09:30:10Z" data-provider="datas" finished-at="2018-03-16T09:30:10Z">
+        <test-method status="PASS" signature="test1(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.lemon.phoenix.interfaces.RegisterInterface@73f792cf]" name="test1" duration-ms="46" started-at="2018-03-19T20:38:56Z" data-provider="datas" finished-at="2018-03-19T20:38:56Z">
           <params>
             <param index="0">
               <value>
@@ -193,7 +193,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test1 -->
-        <test-method status="PASS" signature="batchWriteCaseResult()[pri:0, instance:com.lemon.phoenix.interfaces.RegisterInterface@73f792cf]" name="batchWriteCaseResult" is-config="true" duration-ms="171" started-at="2018-03-16T09:30:10Z" finished-at="2018-03-16T09:30:10Z">
+        <test-method status="PASS" signature="batchWriteCaseResult()[pri:0, instance:com.lemon.phoenix.interfaces.RegisterInterface@73f792cf]" name="batchWriteCaseResult" is-config="true" duration-ms="328" started-at="2018-03-19T20:38:56Z" finished-at="2018-03-19T20:38:56Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- batchWriteCaseResult -->
