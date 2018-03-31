@@ -74,14 +74,12 @@ public class HttpUtil {
 		HttpGet httpget=new HttpGet(uri);
 		String resultString="";
 		try {
-			//设置参数到httpget对象中
-			//httpget.setEntity(new UrlEncodedFormEntity(params));
 			//准备httpClient对象
 			CloseableHttpClient httpClient=HttpClients.createDefault();
 			//发送请求
 			CloseableHttpResponse response=httpClient.execute(httpget);
-			resultString=EntityUtils.toString(response.getEntity());
 			//解析数据
+			resultString=EntityUtils.toString(response.getEntity());
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
