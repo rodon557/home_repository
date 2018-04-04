@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="phoenix_app_1" duration-ms="67808" started-at="2018-03-14T12:25:36Z" finished-at="2018-03-14T12:26:44Z">
+  <suite name="phoenix_app_1" duration-ms="921" started-at="2018-04-03T01:58:02Z" finished-at="2018-04-03T01:58:03Z">
     <groups>
     </groups>
-    <test name="registerTest" duration-ms="67808" started-at="2018-03-14T12:25:36Z" finished-at="2018-03-14T12:26:44Z">
-      <class name="com.lemon.app.WechatLoginCase">
-        <test-method status="PASS" signature="setUp(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.lemon.app.WechatLoginCase@5d624da6]" name="setUp" is-config="true" duration-ms="40758" started-at="2018-03-14T20:25:36Z" finished-at="2018-03-14T20:26:17Z">
+    <test name="registerTest" duration-ms="921" started-at="2018-04-03T01:58:02Z" finished-at="2018-04-03T01:58:03Z">
+      <class name="com.lemon.app.FutureLoanSwipe">
+        <test-method status="PASS" signature="setUp(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.lemon.app.FutureLoanSwipe@7fac631b]" name="setUp" is-config="true" duration-ms="12501" started-at="2018-04-03T09:57:49Z" finished-at="2018-04-03T09:58:02Z">
           <params>
             <param index="0">
               <value>
@@ -16,12 +16,12 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[com.tencent.mm]]>
+                <![CDATA[com.xxzb.fenwoo]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[com.tencent.mm.ui.LauncherUI]]>
+                <![CDATA[com.xxzb.fenwoo.activity.addition.SplashActivity]]>
               </value>
             </param>
             <param index="3">
@@ -33,15 +33,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="test()[pri:0, instance:com.lemon.app.WechatLoginCase@5d624da6]" name="test" duration-ms="25809" started-at="2018-03-14T20:26:17Z" finished-at="2018-03-14T20:26:43Z">
+        <test-method status="PASS" signature="test()[pri:0, instance:com.lemon.app.FutureLoanSwipe@7fac631b]" name="test" duration-ms="788" started-at="2018-04-03T09:58:02Z" finished-at="2018-04-03T09:58:03Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.lemon.app.WechatLoginCase@5d624da6]" name="tearDown" is-config="true" duration-ms="1220" started-at="2018-03-14T20:26:43Z" finished-at="2018-03-14T20:26:44Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.lemon.app.FutureLoanSwipe@7fac631b]" name="tearDown" is-config="true" duration-ms="1094" started-at="2018-04-03T09:58:04Z" finished-at="2018-04-03T09:58:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.lemon.app.WechatLoginCase -->
+      </class> <!-- com.lemon.app.FutureLoanSwipe -->
     </test> <!-- registerTest -->
   </suite> <!-- phoenix_app_1 -->
 </testng-results>

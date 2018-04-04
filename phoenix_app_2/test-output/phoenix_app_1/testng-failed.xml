@@ -1,15 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [phoenix_app_1]">
+  <parameter name="appPackage" value="com.xxzb.fenwoo"/>
+  <parameter name="appActivity" value="com.xxzb.fenwoo.activity.addition.SplashActivity"/>
+  <parameter name="restApi" value="http://127.0.0.1:4723/wd/hub"/>
+  <parameter name="deviceName" value="127.0.0.1:62001"/>
+  <listeners>
+    <listener class-name="com.lemon.phoenix.listener.TestListener"/>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+  </listeners>
   <test name="registerTest(failed)">
     <classes>
-      <class name="com.lemon.app.WechatLoginCase">
+      <class name="com.lemon.app.FutureLoanSwipe">
         <methods>
           <include name="test"/>
-          <include name="tearDown"/>
           <include name="setUp"/>
         </methods>
-      </class> <!-- com.lemon.app.WechatLoginCase -->
+      </class> <!-- com.lemon.app.FutureLoanSwipe -->
     </classes>
   </test> <!-- registerTest(failed) -->
 </suite> <!-- Failed suite [phoenix_app_1] -->

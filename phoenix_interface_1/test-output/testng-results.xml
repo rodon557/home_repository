@@ -2,21 +2,12 @@
 <testng-results skipped="0" failed="0" total="6" passed="6">
   <reporter-output>
   </reporter-output>
-<<<<<<< HEAD
-  <suite name="phoenix_interface_1" duration-ms="3453" started-at="2018-03-17T02:32:04Z" finished-at="2018-03-17T02:32:07Z">
+  <suite name="phoenix_interface_1" duration-ms="3426" started-at="2018-04-03T09:42:17Z" finished-at="2018-04-03T09:42:20Z">
     <groups>
     </groups>
-    <test name="registerTest" duration-ms="3453" started-at="2018-03-17T02:32:04Z" finished-at="2018-03-17T02:32:07Z">
+    <test name="registerTest" duration-ms="3426" started-at="2018-04-03T09:42:17Z" finished-at="2018-04-03T09:42:20Z">
       <class name="com.lemon.phoenix.interfaces.RegisterInterface">
-        <test-method status="PASS" signature="test1(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.lemon.phoenix.interfaces.RegisterInterface@73f792cf]" name="test1" duration-ms="1691" started-at="2018-03-17T10:32:05Z" data-provider="datas" finished-at="2018-03-17T10:32:06Z">
-=======
-  <suite name="phoenix_interface_1" duration-ms="2374" started-at="2018-03-19T12:38:53Z" finished-at="2018-03-19T12:38:56Z">
-    <groups>
-    </groups>
-    <test name="registerTest" duration-ms="2374" started-at="2018-03-19T12:38:53Z" finished-at="2018-03-19T12:38:56Z">
-      <class name="com.lemon.phoenix.interfaces.RegisterInterface">
-        <test-method status="PASS" signature="test1(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.lemon.phoenix.interfaces.RegisterInterface@73f792cf]" name="test1" duration-ms="1373" started-at="2018-03-19T20:38:54Z" data-provider="datas" finished-at="2018-03-19T20:38:55Z">
->>>>>>> ab7cd143ec826d59624548efbefa5cc465a285e2
+        <test-method status="PASS" signature="test1(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.lemon.phoenix.interfaces.RegisterInterface@73f792cf]" name="test1" duration-ms="1340" started-at="2018-04-03T17:42:18Z" data-provider="datas" finished-at="2018-04-03T17:42:20Z">
           <params>
             <param index="0">
               <value>
@@ -30,7 +21,7 @@
             </param>
             <param index="2">
               <value>
-                <![CDATA[{"mobilephone":"13517315121","pwd":"123456","regname":"柠檬班"}]]>
+                <![CDATA[{"mobilephone":"13517315325","pwd":"123456","regname":"柠檬班"}]]>
               </value>
             </param>
             <param index="3">
@@ -40,18 +31,14 @@
             </param>
             <param index="4">
               <value>
-                <![CDATA[[{"no":"1","sql":"select count(*) from member where mobilephone='13517315121'","expectedQueryRereslt":"1"}]]]>
+                <![CDATA[[{"no":"1","sql":"select count(*) from member where mobilephone='13517315325'","expectedQueryRereslt":"1"}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test1 -->
-<<<<<<< HEAD
-        <test-method status="PASS" signature="test1(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.lemon.phoenix.interfaces.RegisterInterface@73f792cf]" name="test1" duration-ms="492" started-at="2018-03-17T10:32:06Z" data-provider="datas" finished-at="2018-03-17T10:32:07Z">
-=======
-        <test-method status="PASS" signature="test1(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.lemon.phoenix.interfaces.RegisterInterface@73f792cf]" name="test1" duration-ms="219" started-at="2018-03-19T20:38:55Z" data-provider="datas" finished-at="2018-03-19T20:38:56Z">
->>>>>>> ab7cd143ec826d59624548efbefa5cc465a285e2
+        <test-method status="PASS" signature="test1(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.lemon.phoenix.interfaces.RegisterInterface@73f792cf]" name="test1" duration-ms="253" started-at="2018-04-03T17:42:20Z" data-provider="datas" finished-at="2018-04-03T17:42:20Z">
           <params>
             <param index="0">
               <value>
@@ -65,7 +52,7 @@
             </param>
             <param index="2">
               <value>
-                <![CDATA[{"mobilephone":"13517315121","pwd":"123456","regname":"柠檬班"}]]>
+                <![CDATA[{"mobilephone":"13517315325","pwd":"123456","regname":"柠檬班"}]]>
               </value>
             </param>
             <param index="3">
@@ -75,18 +62,14 @@
             </param>
             <param index="4">
               <value>
-                <![CDATA[[{"no":"1","sql":"select count(*) from member where mobilephone='13517315121'","expectedQueryRereslt":"1"}]]]>
+                <![CDATA[[{"no":"1","sql":"select count(*) from member where mobilephone='13517315325'","expectedQueryRereslt":"1"}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test1 -->
-<<<<<<< HEAD
-        <test-method status="PASS" signature="test1(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.lemon.phoenix.interfaces.RegisterInterface@73f792cf]" name="test1" duration-ms="95" started-at="2018-03-17T10:32:07Z" data-provider="datas" finished-at="2018-03-17T10:32:07Z">
-=======
-        <test-method status="PASS" signature="test1(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.lemon.phoenix.interfaces.RegisterInterface@73f792cf]" name="test1" duration-ms="46" started-at="2018-03-19T20:38:56Z" data-provider="datas" finished-at="2018-03-19T20:38:56Z">
->>>>>>> ab7cd143ec826d59624548efbefa5cc465a285e2
+        <test-method status="PASS" signature="test1(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.lemon.phoenix.interfaces.RegisterInterface@73f792cf]" name="test1" duration-ms="47" started-at="2018-04-03T17:42:20Z" data-provider="datas" finished-at="2018-04-03T17:42:20Z">
           <params>
             <param index="0">
               <value>
@@ -100,7 +83,7 @@
             </param>
             <param index="2">
               <value>
-                <![CDATA[{"mobilephone":"13517315121","pwd":"","regname":"柠檬班"}]]>
+                <![CDATA[{"mobilephone":"13517315325","pwd":"","regname":"柠檬班"}]]>
               </value>
             </param>
             <param index="3">
@@ -117,11 +100,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test1 -->
-<<<<<<< HEAD
-        <test-method status="PASS" signature="test1(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.lemon.phoenix.interfaces.RegisterInterface@73f792cf]" name="test1" duration-ms="86" started-at="2018-03-17T10:32:07Z" data-provider="datas" finished-at="2018-03-17T10:32:07Z">
-=======
-        <test-method status="PASS" signature="test1(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.lemon.phoenix.interfaces.RegisterInterface@73f792cf]" name="test1" duration-ms="48" started-at="2018-03-19T20:38:56Z" data-provider="datas" finished-at="2018-03-19T20:38:56Z">
->>>>>>> ab7cd143ec826d59624548efbefa5cc465a285e2
+        <test-method status="PASS" signature="test1(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.lemon.phoenix.interfaces.RegisterInterface@73f792cf]" name="test1" duration-ms="48" started-at="2018-04-03T17:42:20Z" data-provider="datas" finished-at="2018-04-03T17:42:20Z">
           <params>
             <param index="0">
               <value>
@@ -152,11 +131,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test1 -->
-<<<<<<< HEAD
-        <test-method status="PASS" signature="test1(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.lemon.phoenix.interfaces.RegisterInterface@73f792cf]" name="test1" duration-ms="118" started-at="2018-03-17T10:32:07Z" data-provider="datas" finished-at="2018-03-17T10:32:07Z">
-=======
-        <test-method status="PASS" signature="test1(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.lemon.phoenix.interfaces.RegisterInterface@73f792cf]" name="test1" duration-ms="47" started-at="2018-03-19T20:38:56Z" data-provider="datas" finished-at="2018-03-19T20:38:56Z">
->>>>>>> ab7cd143ec826d59624548efbefa5cc465a285e2
+        <test-method status="PASS" signature="test1(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.lemon.phoenix.interfaces.RegisterInterface@73f792cf]" name="test1" duration-ms="48" started-at="2018-04-03T17:42:20Z" data-provider="datas" finished-at="2018-04-03T17:42:20Z">
           <params>
             <param index="0">
               <value>
@@ -187,11 +162,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test1 -->
-<<<<<<< HEAD
-        <test-method status="PASS" signature="test1(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.lemon.phoenix.interfaces.RegisterInterface@73f792cf]" name="test1" duration-ms="91" started-at="2018-03-17T10:32:07Z" data-provider="datas" finished-at="2018-03-17T10:32:07Z">
-=======
-        <test-method status="PASS" signature="test1(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.lemon.phoenix.interfaces.RegisterInterface@73f792cf]" name="test1" duration-ms="46" started-at="2018-03-19T20:38:56Z" data-provider="datas" finished-at="2018-03-19T20:38:56Z">
->>>>>>> ab7cd143ec826d59624548efbefa5cc465a285e2
+        <test-method status="PASS" signature="test1(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.lemon.phoenix.interfaces.RegisterInterface@73f792cf]" name="test1" duration-ms="50" started-at="2018-04-03T17:42:20Z" data-provider="datas" finished-at="2018-04-03T17:42:20Z">
           <params>
             <param index="0">
               <value>
@@ -205,7 +176,7 @@
             </param>
             <param index="2">
               <value>
-                <![CDATA[{"mobilephone":"13517315121","pwd":"123","regname":"柠檬班"}]]>
+                <![CDATA[{"mobilephone":"13517315325","pwd":"123","regname":"柠檬班"}]]>
               </value>
             </param>
             <param index="3">
@@ -222,11 +193,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test1 -->
-<<<<<<< HEAD
-        <test-method status="PASS" signature="batchWriteCaseResult()[pri:0, instance:com.lemon.phoenix.interfaces.RegisterInterface@73f792cf]" name="batchWriteCaseResult" is-config="true" duration-ms="406" started-at="2018-03-17T10:32:07Z" finished-at="2018-03-17T10:32:08Z">
-=======
-        <test-method status="PASS" signature="batchWriteCaseResult()[pri:0, instance:com.lemon.phoenix.interfaces.RegisterInterface@73f792cf]" name="batchWriteCaseResult" is-config="true" duration-ms="328" started-at="2018-03-19T20:38:56Z" finished-at="2018-03-19T20:38:56Z">
->>>>>>> ab7cd143ec826d59624548efbefa5cc465a285e2
+        <test-method status="PASS" signature="batchWriteCaseResult()[pri:0, instance:com.lemon.phoenix.interfaces.RegisterInterface@73f792cf]" name="batchWriteCaseResult" is-config="true" duration-ms="438" started-at="2018-04-03T17:42:20Z" finished-at="2018-04-03T17:42:21Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- batchWriteCaseResult -->

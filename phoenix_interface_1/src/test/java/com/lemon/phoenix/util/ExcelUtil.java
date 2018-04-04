@@ -27,6 +27,7 @@ public class ExcelUtil {
 	public static Map<String,Map<Integer,String>> caseResultMap=new HashMap<String,Map<Integer,String>>();
 	/**读取excel数据
 	 * @param path 文件路径
+	 * @param sheetNum 表单序号
 	 * @param startRow 开始行数
 	 * @param endRow  结束行数
 	 * @param startColumn 开始列
@@ -36,7 +37,7 @@ public class ExcelUtil {
 		Object [][] datas=new Object[endRow-startRow+1][endColumn-startColumn+1];
 		try {
 			Workbook workbook=WorkbookFactory.create(ExcelUtil.class.getResourceAsStream(path));
-			Sheet sheet=workbook.getSheetAt(sheetNum);//传入值为0代表获取excel里的sheet1
+			Sheet sheet=workbook.getSheetAt(sheetNum-1);//传入值为0代表获取excel里的sheet1
 			for(int i=startRow;i<=endRow;i++){
 				Row row=sheet.getRow(i-1);
 				for(int j=startColumn;j<=endColumn;j++){
@@ -66,7 +67,7 @@ public class ExcelUtil {
 		try {
 			InputStream is = new FileInputStream(new File(filePath));
 			Workbook workbook = WorkbookFactory.create(is);
-			Sheet sheet=workbook.getSheetAt(sheetNum);
+			Sheet sheet=workbook.getSheetAt(sheetNum-1);
 			int lastRowNum = sheet.getLastRowNum();
 			for (int i = 0; i < lastRowNum; i++) {
 				Row row=sheet.getRow(i);
@@ -139,12 +140,14 @@ public class ExcelUtil {
 		
 	}
 	public static void main(String[] args) {
-		Object[][]datas=ExcelUtil.read("/rest_info.xlsx",1,2,7,1,3);
-		for (Object[] objects : datas) {
-			for (Object object : objects) {
-				System.out.print("["+object+"]");
-			}
-			System.out.println();
-		}
+//		Object[][]datas=ExcelUtil.read("/rest_info.xlsx",2,2,5,1,3);
+//		for (Object[] objects : datas) {
+//			for (Object object : objects) {
+//				System.out.print("["+object+"]");
+//			}
+//			System.out.println();
+//		}
+//		
 	}
 }
+

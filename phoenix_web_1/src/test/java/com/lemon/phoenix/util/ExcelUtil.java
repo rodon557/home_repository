@@ -42,13 +42,13 @@ public class ExcelUtil {
 		}
 		return datas;
    }
-	public static void main(String[] args) {
-		Object[][]datas=ExcelUtil.read("/register.xlsx",1,2,7,1,4);
-		for (Object[] objects : datas) {
-			for (Object object : objects) {
-				System.out.print(object);
-				System.out.print(" ");
-			}
-		}
-	}
+//	public static void main(String[] args) {
+//		Object[][]datas=ExcelUtil.read("/register.xlsx",1,2,7,1,4);
+//		for (Object[] objects : datas) {
+//			for (Object object : objects) {
+//				System.out.print(object);
+//				System.out.print(" ");
+//			}
+//		}
+//	}
 }
