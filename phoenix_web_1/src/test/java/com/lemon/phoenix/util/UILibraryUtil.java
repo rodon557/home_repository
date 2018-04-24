@@ -22,7 +22,8 @@ public class UILibraryUtil {
     	//从classpath路径底下去读取student.xml以文档document的形式返回
     	Document document;
 		try {
-			document = reader.read(UILibraryUtil.class.getResourceAsStream("/UILibrary.xml"));
+			//document = reader.read(UILibraryUtil.class.getResourceAsStream("/UILibrary.xml"));
+			document = reader.read(UILibraryUtil.class.getResourceAsStream("/baidu_UILibrary.xml"));
 			//获取文档里面定义的根元素
 	    	Element root = document.getRootElement();
 	    	//获取根元素底下的所有子元素

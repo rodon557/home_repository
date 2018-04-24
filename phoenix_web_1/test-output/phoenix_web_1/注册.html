@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>注册</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/0/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sat Mar 17 15:12:04 CST 2018</td>
+<td>Started on:</td><td>Sun Apr 08 09:45:18 CST 2018</td>
 </tr>
-<tr><td>Total time:</td><td>47 seconds (47721 ms)</td>
+<tr><td>Total time:</td><td>30 seconds (30804 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,19 +75,12 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.lemon.phoenix.RegisterPage.testSuccessdatas()'><b>testSuccessdatas</b><br>Test class: com.lemon.phoenix.RegisterPage<br/>
-<a href="#Output-478139423" onClick='toggleBox("Output-478139423", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-478139423" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-478139423">
-<img src='http://localhost/screenshot/注册/2018-03-17/1521270771487.jpg'hight='100' width='100'><a href='http://localhost/screenshot/注册/2018-03-17/1521270771487.jpg'target='_blank'>点击查看大图</a></img><br/>
-</div>
-</td>
+<td title='com.lemon.phoenix.RegisterPage.testSuccessdatas()'><b>testSuccessdatas</b><br>Test class: com.lemon.phoenix.RegisterPage</td>
 <td><div><pre>java.lang.NullPointerException
 	at com.lemon.phoenix.assertion.Assertion.assertNotNull(Assertion.java:52)
 	at com.lemon.phoenix.RegisterPage.testSuccessdatas(RegisterPage.java:43)
-... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace478139423", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace478139423'><pre>java.lang.NullPointerException
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1202813399", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1202813399'><pre>java.lang.NullPointerException
 	at com.lemon.phoenix.assertion.Assertion.assertNotNull(Assertion.java:52)
 	at com.lemon.phoenix.RegisterPage.testSuccessdatas(RegisterPage.java:43)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -115,8 +108,71 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
 </pre></div></td>
-<td>46</td>
-<td>com.lemon.phoenix.RegisterPage@185d8b6</td></tr>
+<td>30</td>
+<td>com.lemon.phoenix.RegisterPage@62379589</td></tr>
+<tr>
+<td title='com.lemon.phoenix.RegisterPage.testSuccessdatas()'><b>testSuccessdatas</b><br>Test class: com.lemon.phoenix.RegisterPage</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: Tried to run command without establishing a connection
+Build info: version: &apos;3.5.1&apos;, revision: &apos;9c21bb67ef&apos;, time: &apos;2017-08-17T15:26:08.955Z&apos;
+System info: host: &apos;BONREE-PC&apos;, ip: &apos;5.5.10.4&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_121&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{moz:profile=C:\Users\bonree\AppData\Local\Temp\rust_mozprofile.GTRpGJud89i0, rotatable=false, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, pageLoadStrategy=normal, moz:headless=false, platform=ANY, specificationLevel=0.0, moz:accessibilityChecks=false, acceptInsecureCerts=false, browserVersion=56.0.1, platformVersion=6.1, moz:processID=8336.0, browserName=firefox, javascriptEnabled=true, platformName=windows_nt}]
+Session ID: a8bea118-3f86-4189-8ba6-88fb9f30db54
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:641)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:698)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:386)
+	at com.lemon.phoenix.util.ScreenUtil.takeScreenShot(ScreenUtil.java:20)
+	at com.lemon.phoenix.listener.TestListener.onTestFailure(TestListener.java:21)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace956337311", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace956337311'><pre>org.openqa.selenium.WebDriverException: Tried to run command without establishing a connection
+Build info: version: &apos;3.5.1&apos;, revision: &apos;9c21bb67ef&apos;, time: &apos;2017-08-17T15:26:08.955Z&apos;
+System info: host: &apos;BONREE-PC&apos;, ip: &apos;5.5.10.4&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_121&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{moz:profile=C:\Users\bonree\AppData\Local\Temp\rust_mozprofile.GTRpGJud89i0, rotatable=false, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, pageLoadStrategy=normal, moz:headless=false, platform=ANY, specificationLevel=0.0, moz:accessibilityChecks=false, acceptInsecureCerts=false, browserVersion=56.0.1, platformVersion=6.1, moz:processID=8336.0, browserName=firefox, javascriptEnabled=true, platformName=windows_nt}]
+Session ID: a8bea118-3f86-4189-8ba6-88fb9f30db54
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:641)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:698)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:386)
+	at com.lemon.phoenix.util.ScreenUtil.takeScreenShot(ScreenUtil.java:20)
+	at com.lemon.phoenix.listener.TestListener.onTestFailure(TestListener.java:21)
+	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1895)
+	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1879)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:778)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:348)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:343)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:305)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:254)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+</pre></div></td>
+<td>30</td>
+<td>com.lemon.phoenix.RegisterPage@62379589</td></tr>
 </table><p>
 </body>
 </html>

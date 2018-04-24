@@ -30,6 +30,7 @@ public class DBCheckerUtil {
 							int dbResult=resultSet.getInt(1);
 							String sdbResult=dbResult+"";
 							String expectedQueryResult=dbChecker.getExpectedQueryResult();
+							//String expectedQueryResult=dbChecker.getNo();
 							logger.info("期望查询结果为：【"+expectedQueryResult+"】");
 							logger.info("实际查询结果为：【"+sdbResult+"】");
 							if(sdbResult.equals(expectedQueryResult)){

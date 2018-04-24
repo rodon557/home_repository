@@ -46,7 +46,7 @@ public class ExcelUtil {
 		Object[][]datas=ExcelUtil.read("/wechat_register.xlsx",2, 2, 3, 1, 5);
 		for (Object[] objects : datas) {
 			for (Object object : objects) {
-				System.out.println(object);
+				System.out.println("["+object+"]");
 			}
 		}
 	}

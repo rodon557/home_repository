@@ -11,10 +11,10 @@ public class RestConfig {
 	public static List<Rest> rList;
 	
 	static{
-		if(rList==null){
+		if(rList==null){           //保证往集合添加数据前 集合是已经创建好了的
 			rList=new ArrayList<Rest>();
 		}
-		Object [][] datas=ExcelUtil.read("/rest_info.xlsx", 0, 2, 14, 1, 4);
+		Object [][] datas=ExcelUtil.read("/rest_info.xlsx", 1, 2, 14, 1, 4);
 		for (Object[] rowDatas : datas) {
 			Rest rest=new Rest();
 			for (int i = 0; i < rowDatas.length; i++) {

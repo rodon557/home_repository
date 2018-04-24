@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [phoenix_web_1]">
+  <parameter name="driverPath" value="src\\test\\resources\\geckodriver.exe"/>
+  <parameter name="seleniumVersion" value="2.x"/>
+  <parameter name="browserType" value="firefox"/>
+  <listeners>
+    <listener class-name="com.lemon.phoenix.listener.TestListener"/>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+  </listeners>
+  <test name="百度(failed)">
+    <classes>
+      <class name="com.lemon.phoenix.FirstPage">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="Test1"/>
+        </methods>
+      </class> <!-- com.lemon.phoenix.FirstPage -->
+    </classes>
+  </test> <!-- 百度(failed) -->
+</suite> <!-- Failed suite [phoenix_web_1] -->

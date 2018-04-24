@@ -6,7 +6,7 @@
       <class name="com.lemon.phoenix.interfaces.RegisterInterface">
         <methods>
           <include name="batchWriteCaseResult"/>
-          <include name="test1"/>
+          <include name="test1" invocation-numbers="6 10"/>
         </methods>
       </class> <!-- com.lemon.phoenix.interfaces.RegisterInterface -->
     </classes>

@@ -40,6 +40,22 @@ public class Assertion {
     	boolean flag=webElement.isEnabled();
     	Assert.assertFalse(flag);
     }
+    /**断言一个选择框被选中
+     * @param webElement
+     * @param expected
+     */
+    public static void assertElementisSelect(WebElement webElement){
+    	boolean flag=webElement.isSelected();
+    	Assert.assertTrue(flag);
+    }
+    /**断言一个选择框没有被选中
+     * @param webElement
+     * @param expected
+     */
+    public static void assertElementisNotSelect(WebElement webElement){
+    	boolean flag=webElement.isSelected();
+    	Assert.assertFalse(flag);
+    }
     /**断言当前页面网址是否包含
      * @param expected
      */

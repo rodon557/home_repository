@@ -22,6 +22,7 @@ import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.ss.usermodel.WorkbookFactory;
 
+
 public class ExcelUtil {
 	private  static Logger logger=Logger.getLogger(ExcelUtil.class);
 	public static Map<String,Map<Integer,String>> caseResultMap=new HashMap<String,Map<Integer,String>>();
@@ -140,14 +141,13 @@ public class ExcelUtil {
 		
 	}
 	public static void main(String[] args) {
-//		Object[][]datas=ExcelUtil.read("/rest_info.xlsx",2,2,5,1,3);
-//		for (Object[] objects : datas) {
-//			for (Object object : objects) {
-//				System.out.print("["+object+"]");
-//			}
-//			System.out.println();
-//		}
-//		
+		Object[][]datas=ExcelUtil.read("/rest_info.xlsx",2,2, 7, 1,5);
+		for (Object[] objects : datas) {
+			for (Object object : objects) {
+				System.out.print("["+object+"]");
+			}
+			System.out.println();
+		}
 	}
 }
 

@@ -23,7 +23,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -37,7 +37,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-phoenix_interface_1">
-              <span class="suite-name border-passed">phoenix_interface_1</span>
+              <span class="suite-name border-failed">phoenix_interface_1</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -90,7 +90,26 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">6 methods,   6 passed</span>
+                    <span class="method-stats">11 methods, 2 failed,   9 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-phoenix_interface_1" class="hide-methods failed suite-phoenix_interface_1"> (hide)</a> <!-- hide-methods failed suite-phoenix_interface_1 -->
+                      <a href="#" panel-name="suite-phoenix_interface_1" class="show-methods failed suite-phoenix_interface_1"> (show)</a> <!-- show-methods failed suite-phoenix_interface_1 -->
+                    </span>
+                    <div class="method-list-content failed suite-phoenix_interface_1">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-phoenix_interface_1" title="com.lemon.phoenix.interfaces.RegisterInterface" hash-for-method="test1(11, 2, {&quot;mobilephone&quot;:&quot;13517335222&quot;,&quot;pwd&quot;:&quot;1234567&quot;}, {&quot;status&quot;:&quot;0&quot;,&quot;code&quot;:&quot;20111&quot;,data:null,&quot;msg&quot;:&quot;...)">test1(11, 2, {"mobilephone":"13517335222","pwd":"1234567"}, {"status":"0","code":"20111",data:null,"msg":"...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-phoenix_interface_1" title="com.lemon.phoenix.interfaces.RegisterInterface" hash-for-method="test1(7, 2, {&quot;mobilephone&quot;:&quot;13517335222&quot;,&quot;pwd&quot;:&quot;123456&quot;}, {&quot;status&quot;:&quot;1&quot;,&quot;code&quot;:&quot;10001&quot;,&quot;data&quot;:null,&quot;msg&quot;:&quot;...)">test1(7, 2, {"mobilephone":"13517335222","pwd":"123456"}, {"status":"1","code":"10001","data":null,"msg":"...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-phoenix_interface_1 -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -106,27 +125,42 @@
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-phoenix_interface_1" title="com.lemon.phoenix.interfaces.RegisterInterface" hash-for-method="test1(3, 1, {&quot;mobilephone&quot;:&quot;13517315325&quot;,&quot;pwd&quot;:&quot;&quot;,&quot;regname&quot;:&quot;柠檬班&quot;}, {&quot;status&quot;:0,&quot;code&quot;:&quot;20103&quot;,&quot;data&quot;:null...)">test1(3, 1, {"mobilephone":"13517315325","pwd":"","regname":"柠檬班"}, {"status":0,"code":"20103","data":null...)</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-phoenix_interface_1" title="com.lemon.phoenix.interfaces.RegisterInterface" hash-for-method="test1(3, 1, {&quot;mobilephone&quot;:&quot;13517335222&quot;,&quot;pwd&quot;:&quot;&quot;,&quot;regname&quot;:&quot;柠檬班&quot;}, {&quot;status&quot;:0,&quot;code&quot;:&quot;20103&quot;,&quot;data&quot;:null...)">test1(3, 1, {"mobilephone":"13517335222","pwd":"","regname":"柠檬班"}, {"status":0,"code":"20103","data":null...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-phoenix_interface_1" title="com.lemon.phoenix.interfaces.RegisterInterface" hash-for-method="test1(2, 1, {&quot;mobilephone&quot;:&quot;13517315325&quot;,&quot;pwd&quot;:&quot;123456&quot;,&quot;regname&quot;:&quot;柠檬班&quot;}, {&quot;status&quot;:0,&quot;code&quot;:&quot;20110&quot;,&quot;data...)">test1(2, 1, {"mobilephone":"13517315325","pwd":"123456","regname":"柠檬班"}, {"status":0,"code":"20110","data...)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-phoenix_interface_1" title="com.lemon.phoenix.interfaces.RegisterInterface" hash-for-method="test1(6, 1, {&quot;mobilephone&quot;:&quot;13517315325&quot;,&quot;pwd&quot;:&quot;123&quot;,&quot;regname&quot;:&quot;柠檬班&quot;}, {&quot;status&quot;:0,&quot;code&quot;:&quot;20108&quot;,&quot;data&quot;:n...)">test1(6, 1, {"mobilephone":"13517315325","pwd":"123","regname":"柠檬班"}, {"status":0,"code":"20108","data":n...)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-phoenix_interface_1" title="com.lemon.phoenix.interfaces.RegisterInterface" hash-for-method="test1(1, 1, {&quot;mobilephone&quot;:&quot;13517315325&quot;,&quot;pwd&quot;:&quot;123456&quot;,&quot;regname&quot;:&quot;柠檬班&quot;}, {&quot;status&quot;:1,&quot;code&quot;:&quot;10001&quot;,&quot;data...)">test1(1, 1, {"mobilephone":"13517315325","pwd":"123456","regname":"柠檬班"}, {"status":1,"code":"10001","data...)</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-phoenix_interface_1" title="com.lemon.phoenix.interfaces.RegisterInterface" hash-for-method="test1(2, 1, {&quot;mobilephone&quot;:&quot;13517335222&quot;,&quot;pwd&quot;:&quot;123456&quot;,&quot;regname&quot;:&quot;柠檬班&quot;}, {&quot;status&quot;:0,&quot;code&quot;:&quot;20110&quot;,&quot;data...)">test1(2, 1, {"mobilephone":"13517335222","pwd":"123456","regname":"柠檬班"}, {"status":0,"code":"20110","data...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-phoenix_interface_1" title="com.lemon.phoenix.interfaces.RegisterInterface" hash-for-method="test1(5, 1, {&quot;mobilephone&quot;:&quot;135&quot;,&quot;pwd&quot;:&quot;123456&quot;,&quot;regname&quot;:&quot;柠檬班&quot;}, {&quot;status&quot;:0,&quot;code&quot;:&quot;20109&quot;,&quot;data&quot;:null,&quot;...)">test1(5, 1, {"mobilephone":"135","pwd":"123456","regname":"柠檬班"}, {"status":0,"code":"20109","data":null,"...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-phoenix_interface_1" title="com.lemon.phoenix.interfaces.RegisterInterface" hash-for-method="test1(9, 2, {&quot;mobilephone&quot;:&quot;&quot;,&quot;pwd&quot;:&quot;123456&quot;}, {&quot;status&quot;:&quot;0&quot;,&quot;code&quot;:&quot;20103&quot;,data:null,&quot;msg&quot;:&quot;手机号不能为空&quot;}, )">test1(9, 2, {"mobilephone":"","pwd":"123456"}, {"status":"0","code":"20103",data:null,"msg":"手机号不能为空"}, )</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-phoenix_interface_1" title="com.lemon.phoenix.interfaces.RegisterInterface" hash-for-method="test1(1, 1, {&quot;mobilephone&quot;:&quot;13517335222&quot;,&quot;pwd&quot;:&quot;123456&quot;,&quot;regname&quot;:&quot;柠檬班&quot;}, {&quot;status&quot;:1,&quot;code&quot;:&quot;10001&quot;,&quot;data...)">test1(1, 1, {"mobilephone":"13517335222","pwd":"123456","regname":"柠檬班"}, {"status":1,"code":"10001","data...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-phoenix_interface_1" title="com.lemon.phoenix.interfaces.RegisterInterface" hash-for-method="test1(6, 1, {&quot;mobilephone&quot;:&quot;13517335222&quot;,&quot;pwd&quot;:&quot;123&quot;,&quot;regname&quot;:&quot;柠檬班&quot;}, {&quot;status&quot;:0,&quot;code&quot;:&quot;20108&quot;,&quot;data&quot;:n...)">test1(6, 1, {"mobilephone":"13517335222","pwd":"123","regname":"柠檬班"}, {"status":0,"code":"20108","data":n...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-phoenix_interface_1" title="com.lemon.phoenix.interfaces.RegisterInterface" hash-for-method="test1(8, 2, {&quot;mobilephone&quot;:&quot;13517335222&quot;,&quot;pwd&quot;:&quot;&quot;}, {&quot;status&quot;:0,&quot;code&quot;:&quot;20103&quot;,&quot;data&quot;:null,&quot;msg&quot;:&quot;密码不能为空&quot;}...)">test1(8, 2, {"mobilephone":"13517335222","pwd":""}, {"status":0,"code":"20103","data":null,"msg":"密码不能为空"}...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-phoenix_interface_1" title="com.lemon.phoenix.interfaces.RegisterInterface" hash-for-method="test1(10, 2, {&quot;mobilephone&quot;:&quot;13517315122&quot;,&quot;pwd&quot;:&quot;123456&quot;}, {&quot;status&quot;:&quot;0&quot;,&quot;code&quot;:&quot;20111&quot;,data:null,&quot;msg&quot;:&quot;用...)">test1(10, 2, {"mobilephone":"13517315122","pwd":"123456"}, {"status":"0","code":"20111",data:null,"msg":"用...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-phoenix_interface_1 -->
@@ -141,6 +175,59 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-phoenix_interface_1" class="panel phoenix_interface_1">
+          <div class="suite-phoenix_interface_1-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.lemon.phoenix.interfaces.RegisterInterface</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="test1(11, 2, {&quot;mobilephone&quot;:&quot;13517335222&quot;,&quot;pwd&quot;:&quot;1234567&quot;}, {&quot;status&quot;:&quot;0&quot;,&quot;code&quot;:&quot;20111&quot;,data:null,&quot;msg&quot;:&quot;...)">
+                  </a> <!-- test1(11, 2, {"mobilephone":"13517335222","pwd":"1234567"}, {"status":"0","code":"20111",data:null,"msg":"...) -->
+                  <span class="method-name">test1</span>
+                  <span class="parameters">(11, 2, {"mobilephone":"13517335222","pwd":"1234567"}, {"status":"0","code":"20111",data:null,"msg":"用户名或者密码错误"}, [{"no":"1","sql":"select * from member where mobilephone='13517335222' and pwd=md5('1234567')":"expectedQueryResult":"0"}])</span>
+                  <div class="stack-trace">com.alibaba.fastjson.JSONException: syntax error, unexpect token &apos;:&apos;
+	at com.alibaba.fastjson.parser.deserializer.JavaBeanDeserializer.deserialze(JavaBeanDeserializer.java:765)
+	at com.alibaba.fastjson.parser.deserializer.JavaBeanDeserializer.parseRest(JavaBeanDeserializer.java:1261)
+	at com.alibaba.fastjson.parser.deserializer.FastjsonASMDeserializer_1_DBChecker.deserialze(Unknown Source)
+	at com.alibaba.fastjson.parser.deserializer.JavaBeanDeserializer.deserialze(JavaBeanDeserializer.java:267)
+	at com.alibaba.fastjson.parser.DefaultJSONParser.parseArray(DefaultJSONParser.java:740)
+	at com.alibaba.fastjson.parser.DefaultJSONParser.parseArray(DefaultJSONParser.java:674)
+	at com.alibaba.fastjson.parser.DefaultJSONParser.parseArray(DefaultJSONParser.java:669)
+	at com.alibaba.fastjson.JSON.parseArray(JSON.java:535)
+	at com.lemon.phoenix.util.DBCheckerUtil.validateDBDataOneColumn(DBCheckerUtil.java:20)
+	at com.lemon.phoenix.interfaces.RegisterInterface.test1(RegisterInterface.java:49)
+... Removed 24 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test1(7, 2, {&quot;mobilephone&quot;:&quot;13517335222&quot;,&quot;pwd&quot;:&quot;123456&quot;}, {&quot;status&quot;:&quot;1&quot;,&quot;code&quot;:&quot;10001&quot;,&quot;data&quot;:null,&quot;msg&quot;:&quot;...)">
+                  </a> <!-- test1(7, 2, {"mobilephone":"13517335222","pwd":"123456"}, {"status":"1","code":"10001","data":null,"msg":"...) -->
+                  <span class="method-name">test1</span>
+                  <span class="parameters">(7, 2, {"mobilephone":"13517335222","pwd":"123456"}, {"status":"1","code":"10001","data":null,"msg":"登录成功"}, [{"no":"1","sql":"select count(*) from member where mobilephone='13517335222' and pwd='E10ADC3949BA59ABBE56E057F20F883E","expectedQueryResult":"1"}])</span>
+                  <div class="stack-trace">com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near &apos;&apos;E10ADC3949BA59ABBE56E057F20F883E&apos; at line 1
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:404)
+	at com.mysql.jdbc.Util.getInstance(Util.java:387)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:939)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3878)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3814)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2478)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2625)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2551)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1861)
+	at com.mysql.jdbc.PreparedStatement.executeQuery(PreparedStatement.java:1962)
+	at com.lemon.phoenix.util.JDBCUtil.query(JDBCUtil.java:37)
+	at com.lemon.phoenix.util.DBCheckerUtil.validateDBDataOneColumn(DBCheckerUtil.java:25)
+	at com.lemon.phoenix.interfaces.RegisterInterface.test1(RegisterInterface.java:49)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-phoenix_interface_1-class-failed -->
           <div class="suite-phoenix_interface_1-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -157,34 +244,18 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="test1(3, 1, {&quot;mobilephone&quot;:&quot;13517315325&quot;,&quot;pwd&quot;:&quot;&quot;,&quot;regname&quot;:&quot;柠檬班&quot;}, {&quot;status&quot;:0,&quot;code&quot;:&quot;20103&quot;,&quot;data&quot;:null...)">
-                  </a> <!-- test1(3, 1, {"mobilephone":"13517315325","pwd":"","regname":"柠檬班"}, {"status":0,"code":"20103","data":null...) -->
+                  <a name="test1(3, 1, {&quot;mobilephone&quot;:&quot;13517335222&quot;,&quot;pwd&quot;:&quot;&quot;,&quot;regname&quot;:&quot;柠檬班&quot;}, {&quot;status&quot;:0,&quot;code&quot;:&quot;20103&quot;,&quot;data&quot;:null...)">
+                  </a> <!-- test1(3, 1, {"mobilephone":"13517335222","pwd":"","regname":"柠檬班"}, {"status":0,"code":"20103","data":null...) -->
                   <span class="method-name">test1</span>
-                  <span class="parameters">(3, 1, {"mobilephone":"13517315325","pwd":"","regname":"柠檬班"}, {"status":0,"code":"20103","data":null,"msg":"密码不能为空"}, )</span>
+                  <span class="parameters">(3, 1, {"mobilephone":"13517335222","pwd":"","regname":"柠檬班"}, {"status":0,"code":"20103","data":null,"msg":"密码不能为空"}, )</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="test1(2, 1, {&quot;mobilephone&quot;:&quot;13517315325&quot;,&quot;pwd&quot;:&quot;123456&quot;,&quot;regname&quot;:&quot;柠檬班&quot;}, {&quot;status&quot;:0,&quot;code&quot;:&quot;20110&quot;,&quot;data...)">
-                  </a> <!-- test1(2, 1, {"mobilephone":"13517315325","pwd":"123456","regname":"柠檬班"}, {"status":0,"code":"20110","data...) -->
+                  <a name="test1(2, 1, {&quot;mobilephone&quot;:&quot;13517335222&quot;,&quot;pwd&quot;:&quot;123456&quot;,&quot;regname&quot;:&quot;柠檬班&quot;}, {&quot;status&quot;:0,&quot;code&quot;:&quot;20110&quot;,&quot;data...)">
+                  </a> <!-- test1(2, 1, {"mobilephone":"13517335222","pwd":"123456","regname":"柠檬班"}, {"status":0,"code":"20110","data...) -->
                   <span class="method-name">test1</span>
-                  <span class="parameters">(2, 1, {"mobilephone":"13517315325","pwd":"123456","regname":"柠檬班"}, {"status":0,"code":"20110","data":null,"msg":"手机号码已被注册"}, [{"no":"1","sql":"select count(*) from member where mobilephone='13517315325'","expectedQueryRereslt":"1"}])</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="test1(6, 1, {&quot;mobilephone&quot;:&quot;13517315325&quot;,&quot;pwd&quot;:&quot;123&quot;,&quot;regname&quot;:&quot;柠檬班&quot;}, {&quot;status&quot;:0,&quot;code&quot;:&quot;20108&quot;,&quot;data&quot;:n...)">
-                  </a> <!-- test1(6, 1, {"mobilephone":"13517315325","pwd":"123","regname":"柠檬班"}, {"status":0,"code":"20108","data":n...) -->
-                  <span class="method-name">test1</span>
-                  <span class="parameters">(6, 1, {"mobilephone":"13517315325","pwd":"123","regname":"柠檬班"}, {"status":0,"code":"20108","data":null,"msg":"密码长度必须为6~18"}, )</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="test1(1, 1, {&quot;mobilephone&quot;:&quot;13517315325&quot;,&quot;pwd&quot;:&quot;123456&quot;,&quot;regname&quot;:&quot;柠檬班&quot;}, {&quot;status&quot;:1,&quot;code&quot;:&quot;10001&quot;,&quot;data...)">
-                  </a> <!-- test1(1, 1, {"mobilephone":"13517315325","pwd":"123456","regname":"柠檬班"}, {"status":1,"code":"10001","data...) -->
-                  <span class="method-name">test1</span>
-                  <span class="parameters">(1, 1, {"mobilephone":"13517315325","pwd":"123456","regname":"柠檬班"}, {"status":1,"code":"10001","data":null,"msg":"注册成功"}, [{"no":"1","sql":"select count(*) from member where mobilephone='13517315325'","expectedQueryRereslt":"1"}])</span>
+                  <span class="parameters">(2, 1, {"mobilephone":"13517335222","pwd":"123456","regname":"柠檬班"}, {"status":0,"code":"20110","data":null,"msg":"手机号码已被注册"}, [{"no":"1","sql":"select count(*) from member where mobilephone='13517335222'","expectedQueryResult":"1"}])</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -193,6 +264,46 @@
                   </a> <!-- test1(5, 1, {"mobilephone":"135","pwd":"123456","regname":"柠檬班"}, {"status":0,"code":"20109","data":null,"...) -->
                   <span class="method-name">test1</span>
                   <span class="parameters">(5, 1, {"mobilephone":"135","pwd":"123456","regname":"柠檬班"}, {"status":0,"code":"20109","data":null,"msg":"手机号码格式不正确"}, )</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test1(9, 2, {&quot;mobilephone&quot;:&quot;&quot;,&quot;pwd&quot;:&quot;123456&quot;}, {&quot;status&quot;:&quot;0&quot;,&quot;code&quot;:&quot;20103&quot;,data:null,&quot;msg&quot;:&quot;手机号不能为空&quot;}, )">
+                  </a> <!-- test1(9, 2, {"mobilephone":"","pwd":"123456"}, {"status":"0","code":"20103",data:null,"msg":"手机号不能为空"}, ) -->
+                  <span class="method-name">test1</span>
+                  <span class="parameters">(9, 2, {"mobilephone":"","pwd":"123456"}, {"status":"0","code":"20103",data:null,"msg":"手机号不能为空"}, )</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test1(1, 1, {&quot;mobilephone&quot;:&quot;13517335222&quot;,&quot;pwd&quot;:&quot;123456&quot;,&quot;regname&quot;:&quot;柠檬班&quot;}, {&quot;status&quot;:1,&quot;code&quot;:&quot;10001&quot;,&quot;data...)">
+                  </a> <!-- test1(1, 1, {"mobilephone":"13517335222","pwd":"123456","regname":"柠檬班"}, {"status":1,"code":"10001","data...) -->
+                  <span class="method-name">test1</span>
+                  <span class="parameters">(1, 1, {"mobilephone":"13517335222","pwd":"123456","regname":"柠檬班"}, {"status":1,"code":"10001","data":null,"msg":"注册成功"}, [{"no":"1","sql":"select count(*) from member where mobilephone='13517335222'","expectedQueryResult":"1"}])</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test1(6, 1, {&quot;mobilephone&quot;:&quot;13517335222&quot;,&quot;pwd&quot;:&quot;123&quot;,&quot;regname&quot;:&quot;柠檬班&quot;}, {&quot;status&quot;:0,&quot;code&quot;:&quot;20108&quot;,&quot;data&quot;:n...)">
+                  </a> <!-- test1(6, 1, {"mobilephone":"13517335222","pwd":"123","regname":"柠檬班"}, {"status":0,"code":"20108","data":n...) -->
+                  <span class="method-name">test1</span>
+                  <span class="parameters">(6, 1, {"mobilephone":"13517335222","pwd":"123","regname":"柠檬班"}, {"status":0,"code":"20108","data":null,"msg":"密码长度必须为6~18"}, )</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test1(8, 2, {&quot;mobilephone&quot;:&quot;13517335222&quot;,&quot;pwd&quot;:&quot;&quot;}, {&quot;status&quot;:0,&quot;code&quot;:&quot;20103&quot;,&quot;data&quot;:null,&quot;msg&quot;:&quot;密码不能为空&quot;}...)">
+                  </a> <!-- test1(8, 2, {"mobilephone":"13517335222","pwd":""}, {"status":0,"code":"20103","data":null,"msg":"密码不能为空"}...) -->
+                  <span class="method-name">test1</span>
+                  <span class="parameters">(8, 2, {"mobilephone":"13517335222","pwd":""}, {"status":0,"code":"20103","data":null,"msg":"密码不能为空"}, )</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test1(10, 2, {&quot;mobilephone&quot;:&quot;13517315122&quot;,&quot;pwd&quot;:&quot;123456&quot;}, {&quot;status&quot;:&quot;0&quot;,&quot;code&quot;:&quot;20111&quot;,data:null,&quot;msg&quot;:&quot;用...)">
+                  </a> <!-- test1(10, 2, {"mobilephone":"13517315122","pwd":"123456"}, {"status":"0","code":"20111",data:null,"msg":"用...) -->
+                  <span class="method-name">test1</span>
+                  <span class="parameters">(10, 2, {"mobilephone":"13517315122","pwd":"123456"}, {"status":"0","code":"20111",data:null,"msg":"用户名或者密码错误"}, [{"no":"1","sql":"select count(*) from member where mobilephone='13517315122' and pwd=md5('123456')","expectedQueryResult":"0"}])</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -249,36 +360,56 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(6);
+data.addRows(11);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'test1')
 data.setCell(0, 2, 'com.lemon.phoenix.interfaces.RegisterInterface')
-data.setCell(0, 3, 1340);
+data.setCell(0, 3, 1016);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'test1')
 data.setCell(1, 2, 'com.lemon.phoenix.interfaces.RegisterInterface')
-data.setCell(1, 3, 253);
+data.setCell(1, 3, 243);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'test1')
 data.setCell(2, 2, 'com.lemon.phoenix.interfaces.RegisterInterface')
-data.setCell(2, 3, 50);
+data.setCell(2, 3, 230);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'test1')
 data.setCell(3, 2, 'com.lemon.phoenix.interfaces.RegisterInterface')
-data.setCell(3, 3, 48);
+data.setCell(3, 3, 218);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'test1')
 data.setCell(4, 2, 'com.lemon.phoenix.interfaces.RegisterInterface')
-data.setCell(4, 3, 48);
+data.setCell(4, 3, 53);
 data.setCell(5, 0, 5)
 data.setCell(5, 1, 'test1')
 data.setCell(5, 2, 'com.lemon.phoenix.interfaces.RegisterInterface')
-data.setCell(5, 3, 47);
+data.setCell(5, 3, 51);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'test1')
+data.setCell(6, 2, 'com.lemon.phoenix.interfaces.RegisterInterface')
+data.setCell(6, 3, 50);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'test1')
+data.setCell(7, 2, 'com.lemon.phoenix.interfaces.RegisterInterface')
+data.setCell(7, 3, 49);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'test1')
+data.setCell(8, 2, 'com.lemon.phoenix.interfaces.RegisterInterface')
+data.setCell(8, 3, 48);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'test1')
+data.setCell(9, 2, 'com.lemon.phoenix.interfaces.RegisterInterface')
+data.setCell(9, 3, 48);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'test1')
+data.setCell(10, 2, 'com.lemon.phoenix.interfaces.RegisterInterface')
+data.setCell(10, 3, 47);
 window.suiteTableData['phoenix_interface_1']= { tableData: data, tableDiv: 'times-div-phoenix_interface_1'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 seconds</span>
+              <span class="suite-total-time">Total running time: 2 seconds</span>
               <div id="times-div-phoenix_interface_1">
               </div> <!-- times-div-phoenix_interface_1 -->
             </div> <!-- times-div -->
@@ -306,32 +437,56 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">com.lemon.phoenix.interfaces.RegisterInterface</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">test1(1, 1, {"mobilephone":"13517315325","pwd":"123456","regname":"柠檬班"}, {"status":1,"code":"10001","data...)</span>
+                <span class="method-name">test1(1, 1, {"mobilephone":"13517335222","pwd":"123456","regname":"柠檬班"}, {"status":1,"code":"10001","data...)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">test1(2, 1, {"mobilephone":"13517315325","pwd":"123456","regname":"柠檬班"}, {"status":0,"code":"20110","data...)</span>
-                <span class="method-start">1341 ms</span>
+                <span class="method-name">test1(2, 1, {"mobilephone":"13517335222","pwd":"123456","regname":"柠檬班"}, {"status":0,"code":"20110","data...)</span>
+                <span class="method-start">1017 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">test1(3, 1, {"mobilephone":"13517315325","pwd":"","regname":"柠檬班"}, {"status":0,"code":"20103","data":null...)</span>
-                <span class="method-start">1595 ms</span>
+                <span class="method-name">test1(3, 1, {"mobilephone":"13517335222","pwd":"","regname":"柠檬班"}, {"status":0,"code":"20103","data":null...)</span>
+                <span class="method-start">1247 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">test1(4, 1, {"mobilephone":"","pwd":"","regname":"柠檬班"}, {"status":0,"code":"20103","data":null,"msg":"手机号...)</span>
-                <span class="method-start">1643 ms</span>
+                <span class="method-start">1298 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">test1(5, 1, {"mobilephone":"135","pwd":"123456","regname":"柠檬班"}, {"status":0,"code":"20109","data":null,"...)</span>
+                <span class="method-start">1348 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test1(6, 1, {"mobilephone":"13517335222","pwd":"123","regname":"柠檬班"}, {"status":0,"code":"20108","data":n...)</span>
+                <span class="method-start">1396 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">test1(7, 2, {"mobilephone":"13517335222","pwd":"123456"}, {"status":"1","code":"10001","data":null,"msg":"...)</span>
+                <span class="method-start">1446 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test1(8, 2, {"mobilephone":"13517335222","pwd":""}, {"status":0,"code":"20103","data":null,"msg":"密码不能为空"}...)</span>
                 <span class="method-start">1692 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">test1(6, 1, {"mobilephone":"13517315325","pwd":"123","regname":"柠檬班"}, {"status":0,"code":"20108","data":n...)</span>
+                <span class="method-name">test1(9, 2, {"mobilephone":"","pwd":"123456"}, {"status":"0","code":"20103",data:null,"msg":"手机号不能为空"}, )</span>
                 <span class="method-start">1741 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test1(10, 2, {"mobilephone":"13517315122","pwd":"123456"}, {"status":"0","code":"20111",data:null,"msg":"用...)</span>
+                <span class="method-start">1790 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">test1(11, 2, {"mobilephone":"13517335222","pwd":"1234567"}, {"status":"0","code":"20111",data:null,"msg":"...)</span>
+                <span class="method-start">2009 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-suite after">
                 <span class="method-name">batchWriteCaseResult</span>
-                <span class="method-start">2056 ms</span>
+                <span class="method-start">2081 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

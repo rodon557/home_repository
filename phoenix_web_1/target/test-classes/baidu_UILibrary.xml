@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pages>
+	<page class="com.lemon.phoenix.FirstPage" value="百度首页">
+		<locator by="name" value="tj_trnews" desc="新闻"></locator>
+		<locator by="name" value="tj_trtieba" desc="贴吧"></locator>
+		<locator by="name" value="tj_settingicon" desc="设置"></locator>
+		<locator by="linkText" value="高级搜索" desc="设置"></locator>
+		<locator by="name" value="tj_trhao123" desc="hao123"></locator>
+		<locator by="name" value="tj_briicon" desc="更多产品"></locator>
+		<locator by="id" value="news" desc="新闻全文"></locator>
+		<locator by="id" value="newstitle" desc="新闻标题"></locator>
+		<locator by="name" value="tj_briicon" desc="更多产品"></locator>
+	</page>
+	
+</pages>

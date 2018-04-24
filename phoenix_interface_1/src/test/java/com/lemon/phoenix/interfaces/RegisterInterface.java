@@ -55,7 +55,7 @@ public class RegisterInterface extends  Base{
    }
 	@DataProvider
 	public Object[][] datas(){
-		return ExcelUtil.read("/rest_info.xlsx", 1,2, 7, 1,5);
+		return ExcelUtil.read("/rest_info.xlsx", 2,2, 12, 1,5);
 	
 	}
 }
